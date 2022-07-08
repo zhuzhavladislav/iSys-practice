@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
+
 function Peoples_card({ name, gender, height, mass, birth_year, url }) {
   return (
     <div className="people">
@@ -10,14 +11,7 @@ function Peoples_card({ name, gender, height, mass, birth_year, url }) {
       <p>Height: {height}</p>
       <p>Mass: {mass}</p>
       <p>Birth year: {birth_year}</p>
-      <Link
-        to={{
-          pathname: "/people-details",
-          state: {
-            url,
-          },
-        }}
-      >
+      <Link to={"/people-details"} state={{url}}>
         <button className="main-button">More</button>
       </Link>
     </div>

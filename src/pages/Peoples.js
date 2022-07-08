@@ -13,7 +13,9 @@ class Peoples extends React.Component {
     const {
       data: { results },
     } = await axios.get("https://swapi.dev/api/people/");
+    console.log(results)
     this.setState({ peoples: results, isLoading: false });
+    
   };
 
   componentDidMount() {
