@@ -13,7 +13,6 @@ class Peoples extends React.Component {
     const {
       data: { results },
     } = await axios.get("https://swapi.dev/api/people/");
-    console.log(results)
     this.setState({ peoples: results, isLoading: false });
     
   };
@@ -33,7 +32,6 @@ class Peoples extends React.Component {
           ) : ( <div className="peoples">
             {peoples.map((people) => (
                 <Peoples_card
-                  key={people.url}
                   name={people.name}
                   gender={people.gender}
                   height={people.height}

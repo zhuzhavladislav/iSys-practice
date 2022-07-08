@@ -22,7 +22,6 @@ function People_details() {
       .then((data) => {
         setDetail(data);
         setLoading(false);
-        console.log(data);
       });
   }, []);
 
