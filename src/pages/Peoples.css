@@ -1,0 +1,48 @@
+.peoples {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 280px);
+    grid-row-gap: 40px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+  }
+
+.people {
+  width: 216px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+    0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+  border-radius: 5px;
+  color: #adaeb9;
+}
+
+.people > h3 {
+  width: 175px;
+  color: #232323;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 8px;
+  font-family: Inter;
+  font-weight: Bold;
+  font-size: 16px;
+  text-align: left;
+}
+
+.people > p {
+  width: 200px;
+  color: #232323;
+  margin-top: 0px;
+  margin-left: 20px;
+  font-family: Inter;
+  font-weight: Normal;
+  font-size: 13px;
+  text-align: left;
+}
+
+.main-button {
+  margin-top: 15px;
+  margin-left: 20px;
+}
