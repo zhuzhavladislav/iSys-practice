@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 function Peoples_card({ name, gender, height, mass, birth_year, url }) {
+  var id = url.match(/\d+/g)
   return (
     <div className="people">
       <h3>{name}</h3>
@@ -11,7 +12,7 @@ function Peoples_card({ name, gender, height, mass, birth_year, url }) {
       <p>Height: {height}</p>
       <p>Mass: {mass}</p>
       <p>Birth year: {birth_year}</p>
-      <Link to={"/people-details"} state={{url}}>
+      <Link to={`/people/${id[0]}`} state={{url}}>
         <button className="main-button">More</button>
       </Link>
     </div>

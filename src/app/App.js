@@ -11,8 +11,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" exact={true} element={<Home />} />
-          <Route path="/peoples" element={<Peoples />} />
-          <Route path="/people-details" element={<People_details />} /> *
+          <Route path="/people" element={<Peoples />} />
+          <Route path=":id" element={<People_details />} />
         </Routes>
       </Router>
     </div>

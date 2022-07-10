@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import People_details_card from "../component/people_details_card";
 import "./People_details.css";
 
@@ -8,10 +8,12 @@ function People_details() {
   const [isLoading, setLoading] = useState(true);
   const location = useLocation();
   let url = null;
+  var id = null;
 
   if (location.state == undefined) {
   } else {
     url = location.state.url;
+    id = url.match(/\d+/g)
   }
 
   useEffect(() => {
@@ -25,6 +27,7 @@ function People_details() {
       });
   }, []);
 
+  
   return (
     <div>
       {isLoading ? (
@@ -34,6 +37,8 @@ function People_details() {
       ) : (
         <div className="onePeople">
         <People_details_card
+          id={id[0]}
+          key={id[0]}
           name={people_details.name}
           height={people_details.height}
           mass={people_details.mass}

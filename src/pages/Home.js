@@ -5,22 +5,22 @@ class Main extends React.Component {
   render() {
     return (
       <div className="home">
-        <Link to="/peoples">
+        <Link to="/people">
           <button>Peoples</button>
         </Link>
-        <Link to="/planets">
+        <Link to="/planet">
           <button>Planets</button>
         </Link>
-        <Link to="/films">
+        <Link to="/film">
           <button>Films</button>
         </Link>
-        <Link to="/species">
+        <Link to="/specie">
           <button>Species</button>
         </Link>
-        <Link to="/vehicles">
+        <Link to="/vehicle">
           <button>Vehicles</button>
         </Link>
-        <Link to="/starships">
+        <Link to="/starship">
           <button>Starships</button>
         </Link>
       </div>
