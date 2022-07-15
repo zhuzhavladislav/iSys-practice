@@ -21,10 +21,10 @@ function Peoples_card({
       <h3>{name}</h3>
       <p>Height: {height}</p>
       <p>Mass: {mass}</p>
-      <p>Hair_color: {hair_color}</p>
-      <p>Skin_color: {skin_color}</p>
-      <p>Eye_color: {eye_color}</p>
-      <p>Birth_year: {birth_year}</p>
+      <p>Hair color: {hair_color}</p>
+      <p>Skin color: {skin_color}</p>
+      <p>Eye color: {eye_color}</p>
+      <p>Birth year: {birth_year}</p>
       <p>Gender: {gender}</p>
       <p>Homeworld:</p>
       <ul>
