@@ -40,12 +40,7 @@ class Peoples extends React.Component {
             {peoples.map((people) => (
               <Peoples_card
                 key={people.url}
-                name={people.name}
-                gender={people.gender}
-                height={people.height}
-                mass={people.mass}
-                birth_year={people.birth_year}
-                url={people.url}
+                peoplesData = {people}
               />
             ))}
           </div>
