@@ -39,19 +39,7 @@ function People_details() {
         <People_details_card
           id={id[0]}
           key={id[0]}
-          name={people_details.name}
-          height={people_details.height}
-          mass={people_details.mass}
-          hair_color={people_details.hair_color}
-          skin_color={people_details.skin_color}
-          eye_color={people_details.eye_color}
-          birth_year={people_details.birth_year}
-          gender={people_details.gender}
-          homeworld={people_details.homeworld}
-          films={people_details.films}
-          species={people_details.species}
-          vehicles={people_details.vehicles}
-          starships={people_details.starships}
+          peopleData={people_details}
         />
         </div>
       )}
